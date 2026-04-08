@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lab 2 Meeting Minutes webpage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <header>
+        <h1>Lab 2 Meeting Minutes</h1>
+        <nav>
+            <a href="#checkin">Check In</a> |
+            <a href="#agenda">Agenda</a> |
+            <a href="#form">Form</a>
+        </nav>
+    </header>
+
+    <main>
+
+    <div class="heading">
+        <header>Lab 2 Meeting Minutes</header>
+        <h4>4/8/2026</h4>
+        <p>Attendance: Unnati Goyal</p>
+    </div>
+
+    <section id="checkin">
+        <div class="check-in">
+            <h2><strong>Check In</strong></h2>
+            <ul>
+                <li>Completed Lab 1</li>
+                <li>Set meeting times with group</li>
+                <li>Need to do the 4 group assignments</li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="agenda">
+        <div class="to-do">
+            <h2><strong>Agenda</strong></h2>
+            <p>Will practice HTML by building a meeting minutes. 
+                Need to practice <em><span>different tags</span></em>, and get familiar with it.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="tasks">
+            <h3><strong>Examples</strong></h3>
+            <img src="meetingMinuteExample.webp" width="50" alt="This is an example of how meeting minutes can look like"/>
+            <audio src="AudioPractice.mp3" type="audio/mp3"></audio>
+            <video width="340" height="640">
+                <source src="VideoPractice.MP4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="ending">
+            <details>
+                <summary>Completed tasks</summary>
+                <ol>
+                    <li>Practiced different tags</li>
+                    <li>Added image</li>
+                    <li>Added video</li>
+                    <li>Added audio</li>
+                </ol>
+            </details>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="form">
+        <div class="form">
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="date">Today's date:</label>
+                    <input type="date" id="date" name="date">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preference</legend>
+                    <input type="checkbox" id="option1" name="assignments" value="class assignments">
+                    <label for="assignments">You like class assignments the most</label><br>
+                    <input type="checkbox" id="option2" name="assignments2" value="group assignments">
+                    <label for="vehicle2">You like group assignments the most</label><br>
+                    <input type="checkbox" id="option3" name="lab" value="Lab">
+                    <label for="vehicle3">You like labs the most</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Year</legend>
+                    <p>Select your <b>current</b> school year:</p>
+                    <input type="radio" id="freshman" name="year" value="freshman" checked>
+                    <label for="freshman">Freshman</label><br>
+                    
+                    <input type="radio" id="sophmore" name="year" value="sophmore">
+                    <label for="sophmore">Sophmore</label><br>
+                    
+                    <input type="radio" id="Junior" name="year" value="Junior">
+                    <label for="Junior">Junior</label>
+
+                    <input type="radio" id="Senior" name="year" value="Senior">
+                    <label for="Senior">Senior</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Favorite Subject</legend>
+                    <label for="subject">Choose a subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="cs">Computer Science</option>
+                        <option value="math">Math</option>
+                        <option value="physics">Physics</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Favorite Language</legend>
+                    <label for="language">Pick or type:</label>
+                    <input list="languages" id="language" name="language">
+                    <datalist id="languages">
+                        <option value="Python">
+                        <option value="Java">
+                        <option value="C++">
+                    </datalist>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comments</legend>
+                    <label for="comments">Additional feedback:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>End of Meeting Minutes. <i>Go have fun for rest of the day!</i></p>
+    </footer>
+
+  </body>
+</html>
