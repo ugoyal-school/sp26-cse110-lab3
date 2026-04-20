@@ -1,3 +1,15 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    text-align: center;
+}
+
+input[type="text"] {
+    border: 2px solid darkgray;
+}
+
 .heading {
   text-align: center;
   background-color: #f5f5f5;
@@ -20,6 +32,12 @@
 
 .heading p {
     color: hsl(237, 87%, 29%)
+}
+
+header {
+    display: block;
+    text-align: center;
+    position: static;
 }
 
 #checkin h2 {
@@ -80,5 +98,53 @@
     border-width: 4px
 }
 
+nav a {
+    display: inline-block;
+}
 
+.ending:hover {
+    background-color: lightgray;
+    position: relative;
+}
 
+.ending summary:active {
+    color: lightblue
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+h2 ~ p {
+    font-style: italic;
+}
+
+h2 + p {
+    background-color: #eef;
+    padding: 0.5rem;
+}
+
+div.tasks {
+    background-color: #f9f9ff;
+}
+
+fieldset:has(input:checked) {
+    background-color: rgba(173, 216, 230, 0.3);
+    border: 2px solid lightblue;
+}
+
+.form {
+    & fieldset {
+        margin-bottom: 1rem;
+    }
+
+    & label {
+        display: inline-block;
+        margin-bottom: 0.25rem;
+    }
+}
